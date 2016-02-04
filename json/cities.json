@@ -1,0 +1,38 @@
+[
+	{
+		"name":"Philipinas",
+		"id":1,
+		"countryCode":"US",
+		"population":178000,
+		"district":"California",
+		"image":"http://lorempixel.com/400/200/sports/",
+		"description":"The Most Beautiful Places in Asia"
+	},
+	{
+		"name":"Australia",
+		"id":2,
+		"countryCode":"CO",
+		"population":33000,
+		"district":"San Gil",
+		"image":"http://lorempixel.com/g/400/200/",
+		"description":"The Most Beautiful Places in Oceania"
+	},
+	{
+		"name":"Barcelona",
+		"id":3,
+		"countryCode":"BR",
+		"population":33000,
+		"district":"Manchester",
+		"image":"http://lorempixel.com/400/200/sports/1/",
+		"description":"The Most Beautiful Places in Europe"
+	},
+	{
+		"name":"Rio de Janeiro",
+		"id":4,
+		"countryCode":"FR",
+		"population":33000,
+		"district":"Manchester",
+		"image":"http://lorempixel.com/400/200/sports/1/",
+		"description":"The Most Beautiful Places in America"
+	}
+]
