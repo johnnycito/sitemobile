@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Site Web in KnockoutJS with Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="css/style.css" rel="stylesheet">
+ 
+</head>
+<body>
+	<div class="container-fluid nopadding bg-header">
+		<div class="bg-title">
+			<div class="row main-title">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<h1>Knockout site web </h1>
+					<p>Single Page Template</p>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+		</div>
+	</div>	
+	<header class="monheader">
+		<nav class="navbar navbar-inverse" id="stickyheader">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-offset-2 col-md-8 col-xs-12">
+						<!-- mobile menu  -->
+						<div class="navbar-header main-navigation">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand title-site-web go-top" href="#">Knockout</a>
+						</div>
+						<!-- desktop menu-->
+						<div class="collapse navbar-collapse navigation-site-web" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#services" class="active">Services</a></li>
+								<li><a href="#products">Products</a></li>
+								<li><a href="#news">News</a></li>
+								<li><a href="#travel">Travel</a></li>
+								<li><a href="#contact">Contact</a></li>
+								
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.col-md-8 -->
+				</div><!-- /.row -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<div id="stickyalias"></div>
+	</header>
+	<div id="services" class="container-fluid nopadding">
+		<div class="container">
+			<h2>Services</h2>	
+			<div class="row" data-bind="foreach: services">						
+				<div class="col-md-4" >							
+					<h2 data-bind="text: title"></h2>
+					<p data-bind="text: content"></p>											
+				</div>							
+			</div>
+		</div>
+		<div id="box-vide"></div>		
+	</div>
+	<div class="container-fluid nopadding bg-testimonial">
+		<div class="bg-title">
+			<div class="row box-middle">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<h2>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel diam non neque iaculis sollicitudin."</h2>
+					<p>- lorem ipsum -</p>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+		</div>
+	</div>
+	<div id="products" class="container-fluid nopadding">
+		<div class="container">
+			<h2>Products</h2>
+			<div class="row" data-bind="foreach: products">
+				<div class="col-md-4">
+					<h3 data-bind="text: title"></h3>
+					<a data-bind="attr: {href: imageUrl}" target="_blank">
+						<img id="logo" data-bind="attr: { src: imageSource, alt: imageAlt }"/>
+					</a>							
+					<p data-bind="text: contenu"></p>
+				</div>						
+			</div>
+		</div>
+		
+	</div>	
+	<div class="container-fluid wrap-sponsor">
+		<div id="box-vide"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="sponsor">
+						<img src="images/canon.png"/>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="sponsor">
+						<img src="images/nikon.png"/>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="sponsor">
+						<img src="images/manfrotto.png"/>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="sponsor">
+						<img src="images/prolight.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="box-vide-bottom"></div>
+	</div>
+	<div id="news" class="container-fluid">
+		<div class="container">
+			<h2>News</h2>
+			<div class="row">						
+				<div class="col-md-4">
+					<p><a href="#" class="btn btn-success center-block" data-bind="click:showNewsTechnology, text: newsTechnologyValue">Show Only News Technology</a></p>
+				</div>
+				<div class="col-md-4">
+					<p><a href="#" class="btn btn-success center-block" data-bind="click:showNewsTravel, text: newsTravelValue">Show Only News Travel</a></p>
+				</div>						
+				<div class="col-md-4">
+					<p><a href="#" class="btn btn-success center-block" data-bind="click:resetNews">Liste all the news</a></p>
+				</div>
+			</div>
+			<div class="row" data-bind="foreach: technologys, visible: showTechnology">
+				<div class="col-md-12 list">
+					<img width="100" class="imgTecnology" data-bind="attr: { src: imageSource, alt: title }"/>
+					<h2 data-bind="text:title"></h2>
+					<p data-bind="text:contenu"></p>
+					<p><a data-bind="attr: {href: pageUrl}" target="_blank">More Information</a></p>
+				</div>
+			</div>
+			<div class="row" data-bind="foreach: travels, visible: showTravel">
+				<div class="col-md-12 list">
+					<img width="100" class="imgTecnology" data-bind="attr: { src: imageSource, alt: title }"/>
+					<h2 data-bind="text:title"></h2>
+					<p data-bind="text:contenu"></p>
+					<p><a data-bind="attr: {href: pageUrl}" target="_blank">More Information</a></p>
+				</div>
+			</div>
+		</div>	
+		<div id="box-vide"></div>				
+	</div>	
+	<div id="travel" class="container-fluid">
+		<div class="container">
+			<h2>Travel</h2>			
+			<div class="row" data-bind="foreach: listCities">
+				<div class="col-md-4" >
+					<h4 data-bind="text: description"></h4>
+					<img data-bind="attr: { src: image, alt: name }"/>					
+					<p data-bind="text: name"></p>									
+				</div>
+			</div>
+		</div>
+		<div id="box-vide"></div>
+	</div>
+	<div id="contact" class="container-fluid">
+		<div class="container">
+			<h2>Contact</h2>			
+			<div class="row">
+				<form>
+					<div class="col-md-6">
+						<p>
+							<label for="name">Name:</label>
+							<input type="text" class="contact-field" data-bind="value: name, valueUpdate: 'afterKeydown'"/>
+							<span class="message" data-bind="visible:name.hasError, text:name.validationMessage"></span>
+						</p>
+						<p>
+							<label>Email:</label>
+							<input type="text" class="contact-field" data-bind="value: email, valueUpdate: 'afterKeydown'"/>
+							<span class="message" data-bind="visible:email.hasError, text:email.validationMessage"></span>
+						</p>
+					</div>
+					<div class="col-md-6">
+						<p>
+							<label>Sujet:</label>
+							<input type="text" class="contact-field" data-bind="value: sujet, valueUpdate: 'afterKeydown'"/>
+							<span class="message" data-bind="visible:sujet.hasError, text:sujet.validationMessage"></span>
+						</p>
+						<p>
+							<label>Message:</label>
+							<textarea col="40" rows="10" class="contact-textarea" data-bind="value: message, valueUpdate: 'afterKeydown'"></textarea>
+							<span class="message" data-bind="visible:message.hasError, text:message.validationMessage"></span>
+						</p>
+						<p><button type="submit" class="btn-primary">Send</button><p>
+					</div>
+				</form>
+			</div>			
+		</div>
+		<div id="box-vide"></div>
+	</div>
+	
+	<div id="contact" class="container-fluid bg-footer">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<p> © Copyright 2016 Site web. </p>
+			</div>
+			<div class="col-md-3"></div>
+		</div>		
+	</div>
+	
+	
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/knockout-3.4.0.js"></script>
+	<script src="js/myapp.js"></script>	
+	<script src="js/menu-top.js"></script>
+	
+</html>
