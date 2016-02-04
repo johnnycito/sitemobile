@@ -1,0 +1,419 @@
+.nopadding {
+   
+   padding-top:120px;
+}
+
+
+.navbar {
+   margin-bottom: 0px !important;
+   border-radius: 0px !important;
+}
+    
+
+/*---------------------------------------------------------------------*/
+/*                              HEADER                                 */
+/*---------------------------------------------------------------------*/
+
+.bg-header { 
+	background-image: url('../images/bg-header.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+}
+
+.bg-title{
+	color:#fff;
+	font-family:'Bebas Neue', Arial, sans-serif;
+	height:500px;
+	text-transform:uppercase;
+}
+
+.centered{
+	position:absolute;
+	top:128px;
+	left:20%;
+	right:20%;
+	max-width:100%;
+}
+
+.main-title h1 {
+	font-size:90px;
+	line-height: 65px;
+	width:30%;
+}
+
+.main-title p {
+	font-size:36px;
+	
+	line-height: 15px;
+}
+
+
+#stickyheader { 
+	width: 100%; 
+	z-index: 300;
+}
+
+#stickyalias {
+	display: none;
+	height: 10px;
+}
+/*---------------------------------------------------------------------*/
+/*                              NAVIGATION                             */
+/*---------------------------------------------------------------------*/
+
+.main-navigation{
+	margin-left:5%;
+	height:100px;
+}
+
+.bg-navigation { 
+	background-color:#252222;
+	border-color: #252222;
+	border-radius:0px;
+	height:100px;
+	overflow:hidden;
+	margin-bottom:0px !important;
+	
+}
+
+.title-site-web{
+	color:#fff !important;
+	font-family:'Bebas Neue', Arial, sans-serif;
+	font-size:48px;
+	margin-top:30px;
+}
+
+.navigation-site-web{
+	color:#fff !important;
+	font-family:'Bebas Neue', Arial, sans-serif;
+	font-size:18px;
+	margin-top:30px;
+}
+
+.navigation-site-web ul li a{
+	color:#fff !important;
+}
+
+.navigation-site-web ul li a.active, .navigation-site-web ul li a:hover{
+	color:#5eac8e !important;
+	
+}
+/*---------------------------------------------------------------------*/
+/*                              BODY                                   */
+/*---------------------------------------------------------------------*/
+
+#services{background-color:#65ba99;}
+
+#products{background-color: #cdcdcd;}
+#news{    background-color: #e2534b;}
+
+
+#box-vide{
+	height:100px;
+}
+
+/*---------------------------------------------------------------------*/
+/*                              TESTIMONIAL                            */
+/*---------------------------------------------------------------------*/
+
+.bg-testimonial { 
+	background-image: url('../images/bg-testimonial.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	position:relative;
+}
+
+
+.bg-testimonial .bg-title{
+	color:#fff;
+	font-family:'Bebas Neue', Arial, sans-serif;
+	height:300px;
+	text-transform:uppercase;
+}
+
+
+.bg-testimonial .bg-title h2 {
+	font-size:36px;
+	padding-left:62px;
+	
+	width:80%;
+}
+
+.bg-testimonial .bg-title p {
+	font-size:24px;
+	padding-left:62px;
+	padding-right:72px;
+	text-align:right;
+	
+}
+
+/*---------------------------------------------------------------------*/
+/*                              SPONSORS                               */
+/*---------------------------------------------------------------------*/
+
+.wrap-sponsor{
+	background-color:#bebebe;
+}
+
+.sponsor{
+	height:150px;
+	text-align:center;
+}
+#box-vide-bottom{height:30px;}
+
+/*---------------------------------------------------------------------*/
+/*                              CONTACT                                */
+/*---------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------*/
+/*                              FOOTER                                 */
+/*---------------------------------------------------------------------*/
+
+.bg-footer { 
+	background-color:#282828;
+	overflow:hidden;
+}
+
+.bg-footer p{
+	color:#fff;
+	font-family:'Open Sans', Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:5%;
+	text-align:center;
+}
+
+
+.btn{
+padding: 20px 40px;
+}
+
+.message{
+	color:red;
+	font-weight:500;
+}
+
+.contact-field, .contact-textarea {
+    outline: 0;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+textarea.contact-textarea {
+    height: auto;
+}
+.btn-primary {
+    padding: 8px 20px;
+    background: #fff;
+    border: 1px solid #296ad4;
+    color: #296ad4;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+#products img{
+	width:100%;
+}
+#contact img{
+	width:100%;
+}
+
+.imgTecnology{
+	float: left;
+    height: 10rem;
+    margin-right: 1.2rem;
+    width: 10rem;
+	
+	
+}
+
+.list{
+	/*background-color:#fff;*/
+	color:#fff;
+	border:1px dashed #fff;
+	padding: 10px;
+    margin-bottom: 10px;
+}
+
+.list h2{
+	margin:0px;
+}
+.list a{
+	color:#fff;
+	text-decoration:underline;
+}
+
+#travel{
+	background-color:#7BADD2;
+	color:#000;
+}
+#travel img{
+	width:100%;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*                              RESPONSIVE                             */
+/*---------------------------------------------------------------------*/
+
+/* Large screens ----------- */
+@media only screen and (max-width : 1400px) {
+    
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1025px) and (max-width:1400px) {
+	.bg-title {
+        height: 421px !important;
+	}
+
+	.main-title h1 {
+		font-size: 75px !important;
+	}
+	.main-title p {
+		font-size: 25px !important;
+	}
+	
+	#contact .bg-contact h2 {
+		margin-top:0px 1important;
+	}
+	#contact .box-middle a{
+		font-size:45px !important;
+	}
+	#contact .box-middle p:nth-child(3){
+		font-size:24px !important;
+	}
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	.bg-title {
+        height: 376px !important;
+	}
+
+	.main-title h1 {
+		font-size: 69px !important;
+	    line-height: 55px !important;
+	}
+	.main-title p {
+		font-size: 25px !important;
+	}
+	.bg-contact h2 {
+   
+    margin-top: 0px  !important;
+    margin-bottom: 0px !important;
+	}
+	
+	#contact .bg-title {
+        height: 548px !important;
+	}
+	
+	#contact .box-middle a {
+    
+    font-size: 48px !important;
+    
+}
+}
+
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+	.bg-title {
+        height: 376px !important;
+	}
+
+	.main-title h1 {
+		font-size: 69px !important;
+	    line-height: 55px !important;
+	}
+	.main-title p {
+		font-size: 25px !important;
+	}
+	.bg-contact h2 {
+   
+    margin-top: 0px  !important;
+    margin-bottom: 0px !important;
+	}
+	
+	#contact .bg-title {
+        height: 548px !important;
+	}
+	
+	#contact .box-middle a {
+    
+    font-size: 48px !important;
+    
+	}
+	#contact .box-middle p:nth-child(3){
+		font-size:24px !important;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+.bg-title {
+        height: 376px !important;
+	}
+
+	.main-title h1 {
+		font-size: 69px !important;
+	    line-height: 55px !important;
+	}
+	.main-title p {
+		font-size: 17px !important;
+	}
+	.bg-contact h2 {
+   
+    margin-top: 0px  !important;
+    margin-bottom: 0px !important;
+	}
+	
+	.bg-testimonial .bg-title h2 {
+    font-size: 30px !important;
+   
+	}
+	
+	#contact .bg-title {
+        height: 548px !important;
+	}
+	
+	#contact .box-middle a {
+    
+    font-size: 30px !important;
+	}
+	#contact .box-middle p {
+    font-size: 34px;
+}
+#contact .box-middle p:nth-child(3){
+		font-size:24px !important;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 240px) {
+
+}
